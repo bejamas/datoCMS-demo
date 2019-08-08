@@ -1,0 +1,15 @@
+{
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "graphql": true
+  },
+  "rules": {
+    "react/prop-types": false
+  },
+  "extends": [
+    "standard",
+    "standard-react"
+  ]
+}

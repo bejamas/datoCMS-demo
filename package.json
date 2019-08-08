@@ -1,0 +1,80 @@
+{
+  "name": "gatsby-bejamas-starter",
+  "version": "1.0.0",
+  "description": "Bejamas Gatsby Starter with styled-components",
+  "main": "n/a",
+  "scripts": {
+    "develop": "gatsby develop --https",
+    "build": "gatsby build",
+    "format": "prettier-standard 'src/**/*.js'",
+    "make-tree": "tree -I 'node_modules|.cache|public'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/bejamas/internal/bejamas-gatsby-starter.git"
+  },
+  "keywords": [
+    "gatsby",
+    "starter",
+    "bejamas",
+    "styled-components"
+  ],
+  "author": "Thom Krupa <thom@bejamas.io>",
+  "license": "ISC",
+  "dependencies": {
+    "@rebass/grid": "6.1.0",
+    "babel-plugin-styled-components": "1.10.6",
+    "csp-webpack-plugin": "^2.0.2",
+    "dotenv": "8.0.0",
+    "gatsby": "2.13.52",
+    "gatsby-plugin-csp": "^1.1.3",
+    "gatsby-plugin-google-analytics": "2.1.7",
+    "gatsby-plugin-manifest": "2.2.5",
+    "gatsby-plugin-netlify": "2.1.3",
+    "gatsby-plugin-netlify-cache": "1.2.0",
+    "gatsby-plugin-offline": "2.2.4",
+    "gatsby-plugin-react-helmet": "3.1.3",
+    "gatsby-plugin-styled-components": "3.1.2",
+    "gatsby-plugin-typography": "2.3.2",
+    "gatsby-source-datocms": "^2.1.15",
+    "html-webpack-plugin": "3.2.0",
+    "lodash": "4.17.15",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-helmet": "5.2.1",
+    "react-typography": "0.16.19",
+    "slash": "3.0.0",
+    "styled-components": "4.3.2",
+    "styled-media-query": "2.1.2",
+    "typography": "0.16.19",
+    "uuid": "3.3.2"
+  },
+  "devDependencies": {
+    "csp-html-webpack-plugin": "^3.0.3",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-config-standard-react": "^8.0.0",
+    "eslint-plugin-graphql": "^3.0.3",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^3.0.2",
+    "lint-staged": "^9.2.1",
+    "prettier-standard": "^9.1.1",
+    "standard": "^13.1.0"
+  },
+  "lint-staged": {
+    "linters": {
+      "src/**/*.js": [
+        "prettier-standard",
+        "git add"
+      ]
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
