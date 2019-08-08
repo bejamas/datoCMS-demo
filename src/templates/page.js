@@ -18,7 +18,7 @@ const Page = ({ data, pageContext }) => {
 
   return (
     <>
-      {!isEmpty(page) ? renderPageComponents(page.body) : <h2>Ups.. Something went wrong with DatoCMS data</h2>}
+      {!isEmpty(page) && !isEmpty(page.body) ? renderPageComponents(page.body) : <h2>Ups.. Something went wrong with DatoCMS data or this page doesn't have any components !</h2>}
     </>
   )
 }
